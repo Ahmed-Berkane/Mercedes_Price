@@ -1,7 +1,10 @@
 import sys
 import os
 
-from logger import logging
+# Dynamically add the root project directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+from src.logger import logging
 
 
 
